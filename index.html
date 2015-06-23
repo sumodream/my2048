@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2048</title>
+  <!--css样式连接-->
+	<link rel="stylesheet" type="text/css" href="2048.css"/>
+
+  <!-- js外连接之jQuery库连接 控制游戏主逻辑和动画效果逻辑-->
+	<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+  <!-- js外连接之 支撑逻辑供游戏运转的底层逻辑-->
+	<script type="text/javascript" src="support2048.js"></script>
+  <!-- js外连接之 控制游戏动画效果逻辑-->
+	<script type="text/javascript" src="showanimation2048.js"></script>
+  <!-- js外连接之 控制游戏主逻辑 -->
+	<script type="text/javascript" src="main2048.js"></script>
+</head>
+
+<body>
+  <!--定义2048头文件包含newgame按钮-->
+  <header>
+	<h1>2048</h1>
+  <!-- 定义newgame方法在JavaScript中做方法的声明 -->
+	<a href="javascript:newgame();"  id="newgamebutton">New Game</a>
+	<p>score:<span id="score">0</span></p>
+  </header>
+  
+  <!-- 定义2048游戏体之外边框 格子容器 -->
+  <div id="grid-container">
+  <!-- 定义2048游戏体内部16个单个格子边框 -->
+  	<div class="grid-cell" id="grid-cell-0-0"></div>
+  	<div class="grid-cell" id="grid-cell-0-1"></div>
+  	<div class="grid-cell" id="grid-cell-0-2"></div>
+  	<div class="grid-cell" id="grid-cell-0-3"></div>
+
+  	<div class="grid-cell" id="grid-cell-1-0"></div>
+  	<div class="grid-cell" id="grid-cell-1-1"></div>
+  	<div class="grid-cell" id="grid-cell-1-2"></div>
+  	<div class="grid-cell" id="grid-cell-1-3"></div>
+
+  	<div class="grid-cell" id="grid-cell-2-0"></div>
+  	<div class="grid-cell" id="grid-cell-2-1"></div>
+  	<div class="grid-cell" id="grid-cell-2-2"></div>
+  	<div class="grid-cell" id="grid-cell-2-3"></div>
+
+  	<div class="grid-cell" id="grid-cell-3-0"></div>
+  	<div class="grid-cell" id="grid-cell-3-1"></div>
+  	<div class="grid-cell" id="grid-cell-3-2"></div>
+  	<div class="grid-cell" id="grid-cell-3-3"></div>
+    <!-- 在Firefox内可以看见隐藏的 number-cell代码-->
+  </div>
+</body>
+</html>
